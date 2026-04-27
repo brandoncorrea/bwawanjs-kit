@@ -1,0 +1,21 @@
+{
+  "name": "@bwawan/kit",
+  "type": "module",
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "mutate": "mutagen --incremental --progress --json reports/mutagen.json",
+    "mutate:dry": "mutagen --all --dry-run"
+  },
+  "exports": {
+    "./email": "./src/email/index.js",
+    "./validate": "./src/validate.js",
+    "./rate-limiter": "./src/RateLimiter.js"
+  },
+  "devDependencies": {
+    "@bwawan/mutagen": "^0.1.0",
+    "@vitest/coverage-v8": "^4.1.5",
+    "vitest": "^4.1.5"
+  }
+}
