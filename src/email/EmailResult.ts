@@ -1,4 +1,4 @@
-import { EmailError } from "./EmailError";
+import { EmailError } from "./EmailError.ts"
 
 export interface EmailResult {
   error?: EmailError

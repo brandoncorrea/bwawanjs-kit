@@ -1,4 +1,4 @@
-import { SchemaSpec } from "./SchemaSpec"
+import { SchemaSpec } from "./SchemaSpec.ts"
 
 export interface Schema {
   [field: string]: SchemaSpec

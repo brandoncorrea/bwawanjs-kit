@@ -1,4 +1,4 @@
-import { SpecValidator } from "./Validator";
+import { SpecValidator } from "./Validator.ts";
 
 export interface ValidationRule {
   validate: SpecValidator,

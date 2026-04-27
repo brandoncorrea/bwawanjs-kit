@@ -1,7 +1,7 @@
-import { Schema } from "./Schema"
-import { SchemaSpec } from "./SchemaSpec"
-import { ValidationResult } from "./ValidationResult"
-import { ValidationRule } from "./ValidationRule"
+import { Schema } from "./Schema.ts"
+import { SchemaSpec } from "./SchemaSpec.ts"
+import { ValidationResult } from "./ValidationResult.ts"
+import { ValidationRule } from "./ValidationRule.ts"
 
 export function oneOf(coll: any[]): ValidationRule {
   return {

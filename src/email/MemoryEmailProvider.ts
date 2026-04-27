@@ -1,5 +1,5 @@
-import { EmailData } from "./EmailData"
-import { EmailProvider } from "./EmailProvider"
+import { EmailData } from "./EmailData.ts"
+import { EmailProvider } from "./EmailProvider.ts"
 
 export class MemoryEmailProvider implements EmailProvider {
   emails: EmailData[]

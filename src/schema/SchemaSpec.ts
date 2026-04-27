@@ -1,5 +1,5 @@
-import { SchemaType } from "./SchemaType"
-import { ValidationRule } from "./ValidationRule"
+import { SchemaType } from "./SchemaType.ts"
+import { ValidationRule } from "./ValidationRule.ts"
 
 export interface SchemaSpec {
   type: SchemaType
