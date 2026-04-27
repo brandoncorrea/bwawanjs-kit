@@ -146,7 +146,7 @@ describe('validateSchema', () => {
     it('returns { data } when valid', () => {
       const schema = { name: { type: 'string', required: true } }
       const result = validateSchema(schema, { name: 'hi' })
-      expect(result).toEqual({ data: { name: 'hi' }, errors: {} })
+      expect(result).toEqual({ data: { name: 'hi' } })
     })
 
     it('returns { errors } when invalid', () => {

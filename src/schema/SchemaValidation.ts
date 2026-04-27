@@ -24,7 +24,9 @@ export function validateSchema(
   const result = { errors: {}, data: {} }
   for (const fieldSpec of Object.entries(schema))
     validateEntry(result, fieldSpec, input)
-  return result
+  return Object.keys(result.errors).length
+    ? result
+    : { data: result.data }
 }
 
 function validateEntry(
