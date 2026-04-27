@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { StubEmailProvider } from '../../src/email/StubEmailProvider.js'
+import { StubEmailProvider } from '../../src/email/index.js'
 
 describe('StubEmailProvider', () => {
   it('succeeds for a normal email address', async () => {

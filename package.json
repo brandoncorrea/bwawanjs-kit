@@ -10,7 +10,7 @@
   },
   "exports": {
     "./email": "./src/email/index.js",
-    "./validate": "./src/validate.js",
+    "./schema": "./src/schema/index.js",
     "./rate-limiter": "./src/RateLimiter.js"
   },
   "devDependencies": {

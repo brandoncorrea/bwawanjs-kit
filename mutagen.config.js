@@ -14,8 +14,8 @@ const optionalChainingFix = {
 
 export default {
   mutators: [...mutators.javascript, optionalChainingFix],
-  include: ['src/**/*.js'],
-  testInclude: ['tests/**/*.test.js'],
+  include: ['src/**/*.{js,ts}'],
+  testInclude: ['tests/**/*.test.{js,ts}'],
   createRunner: (sourceFile, opts = {}) => createVitestRunner(sourceFile, {
     config: 'vitest.config.js',
     ...opts

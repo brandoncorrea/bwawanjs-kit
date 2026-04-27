@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { MemoryEmailProvider } from '../../src/email/MemoryEmailProvider.js'
+import { MemoryEmailProvider } from '../../src/email/index.js'
 
 describe('MemoryEmailProvider', () => {
   it('has no emails sent', () => {
