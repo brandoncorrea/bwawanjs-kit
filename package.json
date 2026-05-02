@@ -1,6 +1,23 @@
 {
   "name": "@bwawan/kit",
+  "version": "0.1.0",
+  "description": "Utility kit with email, schema validation, and rate limiting",
+  "license": "MIT",
+  "author": "Brandon Correa",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brandoncorrea/bwawanjs-kit.git"
+  },
+  "keywords": [
+    "email",
+    "schema",
+    "validation",
+    "rate-limiter"
+  ],
   "type": "module",
+  "engines": {
+    "node": ">=23.6"
+  },
   "scripts": {
     "test": "vitest run",
     "test:watch": "vitest",
@@ -13,6 +30,11 @@
     "./schema": "./src/schema/index.js",
     "./rate-limiter": "./src/RateLimiter.js"
   },
+  "files": [
+    "src",
+    "LICENSE",
+    "README.md"
+  ],
   "devDependencies": {
     "@bwawan/mutagen": "^0.1.0",
     "@vitest/coverage-v8": "^4.1.5",

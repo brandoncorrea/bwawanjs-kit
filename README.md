@@ -99,3 +99,16 @@ npm run test:watch  # watch mode
 npm run test:coverage
 npm run mutate      # mutation testing
 ```
+
+### Release
+
+1. Run tests: `npm run test`
+2. Update version in `package.json`
+3. Update `CHANGELOG.md`
+4. Tag: `git tag vx.x.x`
+5. Push: `git push && git push --tags`
+6. Publish: `npm publish --access public`
+
+## License
+
+MIT
